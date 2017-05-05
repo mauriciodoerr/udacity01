@@ -5,24 +5,34 @@
     android:layout_height="match_parent"
     tools:context="com.example.mauricio.udacity01.MainActivity">
 
-    <TextView
-        android:id="@+id/text_view_happy_birthday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Happy Birthday" />
-
-    <TextView
-        android:id="@+id/text_view_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:text="From, Mauricio" />
-
     <ImageView
         android:id="@+id/photo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/android_festa" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/android_festa"
+        />
+
+    <TextView
+        android:id="@+id/text_view_happy_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:text="@string/happy_bday_to" />
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:textSize="26sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:padding="20dp"
+        android:text="@string/happy_bday_from" />
 
 </RelativeLayout>
